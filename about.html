@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleabout.css">
-    <title>Document</title>
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 100px;
+        }
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            font-size: 32px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
 </head>
-<script src="https://kit.fontawesome.com/d6407544dd.js" crossorigin="anonymous"></script>
 <body>
-    <main>
-        <nav>
-            <h1>JS</h1>
-            <div class="nav-link">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Aboout</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="main-page">
-            <div class="mainpage-container">
-              <div class="row">
-                <div class="colom-1">
-                  <h1>OOPS!</h1>
-                  <p>
-                    This website is under Construction.
-                  </p>
-                </div>
-                <div class="colom-2">
-                  <img src="./img/retouch_2024091801555101.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-    </main>
+    <div class="container">
+        <h1>This Page is Private</h1>
+        <p>You do not have permission to access this page.</p>
+        <button class="button" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
